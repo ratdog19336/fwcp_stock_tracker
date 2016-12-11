@@ -8,10 +8,10 @@ attr_accessor :name, :ticker, :nav_ticker, :price, :nav
   end
 
   def self.fund_scraper
-    deals = []
-    deals << self.scrape_tslf
-    deals << self.scrape_egif
-    deals
+    funds = []
+    funds << self.scrape_tslf
+    funds << self.scrape_egif
+    funds
   end
 
   def self.scrape_tslf

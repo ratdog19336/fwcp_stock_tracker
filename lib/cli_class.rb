@@ -25,9 +25,9 @@ class FwcpStockTracker::CLI
     input = nil
     while input != "exit"
       input = gets.strip.downcase
-      if input == "egif"
+      if input == "tslf"
         puts "#{@fund[0].name} - #{@fund[0].ticker}(NAV: #{@fund[0].nav_ticker}) - Price: #{@fund[0].price}, NAV: #{@fund[0].nav}"
-      elsif input == "tslf"
+      elsif input == "egif"
         puts "#{@fund[1].name} - #{@fund[1].ticker}(NAV: #{@fund[1].nav_ticker}) - Price: #{@fund[1].price}, NAV: #{@fund[1].nav}"
       elsif input == "list"
         @fund.each do |fund|
