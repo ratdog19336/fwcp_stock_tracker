@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "fwcp_stock_tracker"
+FwcpStockTracker::CLI.new.call
+
+#     ./bin/fwcp-stock-tracker
